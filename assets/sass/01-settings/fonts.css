@@ -1,0 +1,45 @@
+/*
+    Add your custom styles here
+*/
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: "normal";
+  font-weight: 300;
+  src: url("../../assets\fontsPoppins-Light.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: "normal";
+  font-weight: 500;
+  src: url("../../assets\fontsPoppins-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "SpaceMono";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("../../assets\fontsSpaceMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "SpaceMono";
+  font-style: "Italic";
+  font-weight: 400;
+  src: url("../../assets\fontsSpaceMono-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "SpaceMono";
+  font-style: "normal";
+  font-weight: 700;
+  src: url("../../assets\fontsSpaceMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "SpaceMono";
+  font-style: "Italic";
+  font-weight: 700;
+  src: url("../../assets\fontsSpaceMono-BoldItalic.woff2") format("woff2");
+}/*# sourceMappingURL=fonts.css.map */

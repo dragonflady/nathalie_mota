@@ -653,3 +653,14 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 		return __( ', ', 'twentytwentyone' );
 	}
 endif;
+
+/**
+ * Enqueue the main stylesheet
+ */
+function theme_enqueue_styles() {
+    // Enqueue the main stylesheet
+    wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/css/style.css', array(), wp_get_theme()->get('Version'));
+
+    // Enqueue other stylesheets or scripts if necessary
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
