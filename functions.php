@@ -655,12 +655,14 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 endif;
 
 /**
- * Enqueue the main stylesheet
+ * Enqueue the main stylesheet and scripts
  */
-function theme_enqueue_styles() {
-    // Enqueue the main stylesheet
+function theme_enqueue_styles_scripts() {
     wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/css/style.css', array(), wp_get_theme()->get('Version'));
-
-    // Enqueue other stylesheets or scripts if necessary
+    wp_enqueue_script('theme-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), wp_get_theme()->get('Version'), true);
 }
-add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+add_action('wp_enqueue_scripts', 'theme_enqueue_styles_scripts');
+
+
+
+

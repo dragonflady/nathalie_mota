@@ -17,6 +17,7 @@
 	</div><!-- #content -->
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
+	<?php get_template_part('template-parts/contact_modale'); ?>
 
 	<footer id="colophon" class="site-footer">
 
@@ -71,6 +72,7 @@
 			</div><!-- .powered-by -->
 
 		</div><!-- .site-info -->
+		<a href="#" id="contact-link">Contactez-nous</a>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
