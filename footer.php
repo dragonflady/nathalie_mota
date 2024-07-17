@@ -72,7 +72,6 @@
 			</div><!-- .powered-by -->
 
 		</div><!-- .site-info -->
-		<a href="#" id="contact-link">Contactez-nous</a>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
