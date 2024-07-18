@@ -672,6 +672,13 @@ function add_contact_modal_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_contact_modal_link', 10, 2);
 
+function remove_edit_post_link() {
+    if (is_page() && !current_user_can('edit_posts')) {
+        add_filter('edit_post_link', '__return_false');
+    }
+}
+add_action('template_redirect', 'remove_edit_post_link');
+
 
 
 

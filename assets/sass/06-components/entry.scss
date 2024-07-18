@@ -1,3 +1,7 @@
+// header.entry-header.alignwide {
+//     border: none;
+// }
+
 .entry-title {
 
 	color: var(--entry-header--color);
@@ -60,6 +64,10 @@ h1.entry-title {
 		@extend %responsive-aligndefault-width;
 	}
 }
+
+// .post-edit-link {
+//     display: none; // Ajouté pour masquer le lien "Modifier"
+// }
 
 .entry-footer {
 
