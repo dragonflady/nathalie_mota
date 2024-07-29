@@ -658,26 +658,20 @@ endif;
  * Enqueue the main stylesheet and scripts
  */
 function theme_enqueue_styles_scripts() {
-    wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/sass/06-components/modale.css', array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/sass/style.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('theme-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), wp_get_theme()->get('Version'), true);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles_scripts');
 
 function add_contact_modal_link($items, $args) {
     if ($args->theme_location == 'primary') {
-        $contact_link = '<li class="menu-item"><a href="#" id="contact-link">Contact</a></li>';
+        $contact_link = '<li class="menu-item"><button id="contact-link">CONTACT</button></li>';
         $items .= $contact_link;
     }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_contact_modal_link', 10, 2);
 
-function remove_edit_post_link() {
-    if (is_page() && !current_user_can('edit_posts')) {
-        add_filter('edit_post_link', '__return_false');
-    }
-}
-add_action('template_redirect', 'remove_edit_post_link');
 
 
 

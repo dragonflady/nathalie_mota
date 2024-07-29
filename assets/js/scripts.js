@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var modale = document.getElementById('contact-modal');
+    var modale = document.getElementById('contact-modale');
     var contactLink = document.getElementById('contact-link');
     
     // Ouvrir la modale au clic sur le lien "Contact"

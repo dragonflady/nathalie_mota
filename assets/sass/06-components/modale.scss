@@ -1,45 +1,41 @@
+$border-radius: 8px;
+$border-color: #B8BBC2;
+$input-bg-color: #FFFFFF;
+$input-border-width: 1px;
+
+
 .contact-modale {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 99999;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    overflow: auto;
-
+    background-color: rgba(0, 0, 0, 0.8);
+    
     &-content {
         background-color: #fff;
-        margin: 10% auto;
+        margin: 15% auto;
         padding: 20px;
-        border: 1px solid #888;
-        width: 60%;
-        max-width: 800px;
-        text-align: center;
+        border: 5px solid black;
         font-family: 'SpaceMono', monospace;
         position: relative;
 
         img {
             max-width: 100%;
-            height: auto;
+            height: 106px;
             margin-bottom: 20px;
         }
+
+        input,
+        textarea {
+            border-radius: $border-radius;
+            border: $input-border-width solid $border-color;
+            background-color: $input-bg-color;
+            padding: 10px;
+            width: 263px;
+            box-sizing: border-box;
+         }
     }
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        color: black;
-        text-decoration: none;
-    }
-}

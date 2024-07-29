@@ -414,7 +414,7 @@
 
 		&:hover {
 			text-decoration: underline;
-			text-decoration-style: dotted;
+			text-decoration-style: none;
 		}
 
 		&:focus {
@@ -536,3 +536,4 @@
 		opacity: 1;
 	}
 }
+
